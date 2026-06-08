@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Board with Matching Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>JobMatch</h2>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Jobs</a>
+        <a href="#">Dashboard</a>
+        <a href="#">Login</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Find Your Dream Job</h1>
+    <p>Smart Skill-Based Job Matching Platform</p>
+
+    <div class="search-box">
+        <input type="text" id="skillsInput"
+        placeholder="html, css, javascript">
+
+        <button onclick="searchJobs()">
+            Search Jobs
+        </button>
+    </div>
+</section>
+
+<section class="resume">
+    <h2>Upload Resume</h2>
+    <br>
+    <input type="file">
+</section>
+
+<h2 class="section-title">Features</h2>
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Resume Parsing</h3>
+        <p>Extract skills automatically from resumes.</p>
+    </div>
+
+    <div class="card">
+        <h3>Skill Matching</h3>
+        <p>Match candidates with suitable jobs.</p>
+    </div>
+
+    <div class="card">
+        <h3>Application Tracking</h3>
+        <p>Track application status easily.</p>
+    </div>
+
+    <div class="card">
+        <h3>Employer Dashboard</h3>
+        <p>Manage jobs and applicants.</p>
+    </div>
+
+</div>
+
+<h2 class="section-title">Matching Jobs</h2>
+
+<div id="results">
+
+<div class="job-card">
+    <h3>Frontend Developer</h3>
+    <p>Skills: HTML, CSS, JavaScript</p>
+    <p class="match">Match Score: 95%</p>
+</div>
+
+<div class="job-card">
+    <h3>Java Developer</h3>
+    <p>Skills: Java, Spring Boot</p>
+    <p class="match">Match Score: 88%</p>
+</div>
+
+</div>
+
+<footer>
+    © 2026 JobMatch | Final Year Project
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
